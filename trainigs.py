@@ -409,13 +409,31 @@
 ##                res = False
 ##if(res==True):print("Отсутствует")        
 
-x = int(input())
-while (i<=x):
-        for a in range(
+#функции
+
+##def f(n):
+##    return n * 10 + 5
+##
+##res = f(f(f(10)))
+##print(res)
+
         
+##def f(x):
+##        if(x<=-2): return 1-(2+x)**2
+##        elif(x>-2 and x<=2): return -(x/2)
+##        elif(x>2): return (x-2)**2+1
+                                
+def modify_list(l):
+        l=[i if i%2==0 else l.remove(i) for i in l ]
+        #l=[(i/2) for i in l]
+        for i in l:
+                i = i/2
+lst = [1, 2, 3, 4, 5, 6]
+modify_list(lst)
+print(lst)         
+
         
 
-                                
                 
                         
                         
